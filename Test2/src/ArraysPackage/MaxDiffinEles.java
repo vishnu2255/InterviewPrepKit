@@ -13,8 +13,7 @@ public class MaxDiffinEles {
 	{
 		int min = ar[0];
 		int curr_diff = 0;
-		
-		
+				
 		for(int i=1;i<ar.length;i++)
 		{
 			if(ar[i]<min)
@@ -28,8 +27,7 @@ public class MaxDiffinEles {
 				{
 					curr_diff = diff ; 
 				}
-			}
-			
+			}			
 		}
 		
 		System.out.println(curr_diff);
