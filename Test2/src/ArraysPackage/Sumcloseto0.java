@@ -23,8 +23,7 @@ public class Sumcloseto0 {
 			curr_sum = tm ;		
 			minlind = l;
 			minrind = r;
-		}
-		
+		}		
 		if(tm<0)
 		{
 			l++;
