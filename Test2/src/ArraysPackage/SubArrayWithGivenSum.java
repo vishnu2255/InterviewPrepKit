@@ -10,7 +10,7 @@ public class SubArrayWithGivenSum {
 		int[] ar = {5,4,6,7,9,8,3,1,2};
 //		app1(ar,21);
 		
-		int[] ar1 = {8,5,-2,3,4,-5,7};
+		int[] ar1 = {5,4,1,-5,7};
 		app2(ar1,10);
 		
 	}
@@ -49,6 +49,9 @@ public class SubArrayWithGivenSum {
 				
 		int tmp=0;
 		int dif=0;
+		
+		map.put(0, -1); 
+		
 		for(int i=0;i<ar.length;i++)
 		{				
 			tmp = tmp + ar[i];					

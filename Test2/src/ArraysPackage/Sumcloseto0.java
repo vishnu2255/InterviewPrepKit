@@ -4,7 +4,8 @@ public class Sumcloseto0 {
 
 	public static void main(String[] args) {
 
-	
+		int[] ar  = {1,2,3,4,5};
+		findSum(ar);
 		
 	}
 	
@@ -12,9 +13,9 @@ public class Sumcloseto0 {
 	{
 		int curr_sum = Integer.MAX_VALUE;
 		int l=0,r=arr.length-1;
-		int minlind,minrind;
+		int minlind = 0,minrind=0;
 		
-		while(l<=r)
+		while(l<r)
 		{
 		int tm = arr[l] + arr[r];
 		
@@ -34,6 +35,8 @@ public class Sumcloseto0 {
 		}
 		
 		}
+		
+		System.out.println("indices "+minlind+" , "+minrind);
 		
 	}
 
