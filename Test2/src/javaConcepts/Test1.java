@@ -10,6 +10,8 @@ public class Test1 {
 		Emp e =new Emp();
 		e.salary =100;
 		System.out.println(e.salary);
+		
+		System.out.println(e);
 	}
 
 }

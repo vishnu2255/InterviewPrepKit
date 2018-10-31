@@ -8,9 +8,9 @@ public class LargeSubArraywith01 {
 		// TODO Auto-generated method stub
 		
 //		int[] ar= {0,1,1,0,1,0};
-		int[] ar= {1,1,1,1};
+		//int[] ar= {1,1,1,1};
 		
-//		int[] ar= {1,1,1,0,1,0,0,0,1,1,1,0};
+		int[] ar= {1,1,1,0,1,0,0,0,1,1,1,0};
 		for(int i=0;i<ar.length;i++)
 		{		 
 		 if(ar[i]==0)

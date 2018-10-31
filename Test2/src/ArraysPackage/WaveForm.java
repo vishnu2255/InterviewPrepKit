@@ -5,6 +5,7 @@ public class WaveForm {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
+		//sort the array then swap values
 		int[] ar= {};
 						
 		for(int i=0;i<ar.length;i=i+2)
