@@ -11,11 +11,13 @@ public class PairSum {
 		
 		int[] ar= {1,5,7,-1,5 };
 		
-//		find2(ar,9);
+		
+		
+		find2(ar,6);
 		
 //		countPairs(ar, 6);
 		
-		printPairs(ar, 6);
+//		printPairs(ar, 6);
 	}
 	
 	public static void find(int[] ar, int x)

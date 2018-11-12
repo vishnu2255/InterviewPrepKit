@@ -8,7 +8,7 @@ public class SubArrayWithGivenSum {
 		// TODO Auto-generated method stub
 		
 		int[] ar = {5,4,6,7,9,8,3,1,2};
-		app1(ar,21);
+		app1(ar,21); 
 		
 		int[] ar1 = {5,4,1,-5,7};
 		app2(ar1,10);

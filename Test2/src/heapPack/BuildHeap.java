@@ -118,7 +118,7 @@ public class BuildHeap {
 		arr[++heapsize] = key;
 		 
 		int i=heapsize;
-		
+		  
 		while(i>0 && arr[(i-1)/2]<arr[i])
 		{
 			
