@@ -20,7 +20,9 @@ public class FindMidPoint {
 		
 		obj.printNodes();
 		
-		findMid(n4);
+//		findMid(n4);
+		
+		findKthNodefromEnd(n4, 2);
 	}
 
 	public static void findMid(Node head)
@@ -42,9 +44,25 @@ public class FindMidPoint {
 	
 	public  static void findKthNodefromEnd(Node head,int k)
 	{
+		int n=1;
+		Node tmp = head;
+		while(n<k)
+		{
+			tmp = tmp.next;
+			n++;
+		}
 		
+		Node frs = tmp;
+		Node slo = head;
 		
+		while(frs.next!=null)
+		{
+			frs = frs.next;
+			slo = slo.next;
+		}
 		
+		System.out.println(slo.data);
+				
 	}
 	
 	

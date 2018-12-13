@@ -122,7 +122,9 @@ public class SingleLL {
 			{
 				sPtr = sPtr.next;
 				fPtr = fPtr.next;				
-			}			
+			}
+			
+			//length of the loop
 			while(tm!=sPtr)
 			{
 				tm = tm.next;

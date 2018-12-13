@@ -8,20 +8,22 @@ public class RemoveDuplicates {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] ar = {1,2,3,1,1,2,5,6};
-				
-		int[] ar1= {1,1,2,2,2,3,3,4,4,5,6};
-		
-		int[] ar3 = new int[10];
-		
-		System.arraycopy(ar, 0, ar3, 0, 5);
-		System.out.println(Arrays.toString(ar3));
+//		int[] ar = {1,2,3,1,1,2,5,6};
+//				
+//		int[] ar1= {1,1,2,2,2,3,3,4,4,5,6};
+//		
+//		int[] ar3 = new int[10];
+//		
+//		System.arraycopy(ar, 0, ar3, 0, 5);
+//		System.out.println(Arrays.toString(ar3));
 //		remAdjaDups(ar1);
 		
 		String s = "This is a interview Question";
 		
-		rev(s);
+//		rev(s);
 //		reverseStr(s);
+		String t = "leng";
+		reverseastr(t);
 		
 //		encode(ar1);
 		
@@ -34,6 +36,21 @@ public class RemoveDuplicates {
 		
 	}
 	
+	public static void reverseastr(String str)
+	{
+		char[] s = str.toCharArray();
+		
+		int t = s.length-1;
+		for(int i=0;i<s.length/2;i++)
+		{
+			char tmp = s[i];
+			s[i] = s[t-i];
+			s[t-i] = tmp;
+		}
+		
+		System.out.println(Arrays.toString(s));
+	}
+	
 	public static void rev(String str)
 	{
 		String temp="";
@@ -42,14 +59,16 @@ public class RemoveDuplicates {
 		{
 			if(str.charAt(i) == ' ')
 			{
-				res =temp + res;
+				res =temp + " " + res;
 				temp="";
 			}
-			
+			else
+			{
 			temp =temp+str.charAt(i);
+			}
 		}
 		
-		res =temp + res;
+		res =temp +" "+ res;
 		
 		System.out.println(res);
 	}
@@ -113,9 +132,11 @@ public class RemoveDuplicates {
 		System.out.println(Arrays.toString(ar));
 	}
 	
-	public static void remAdjaDups(int[ ] ar)
+	public static void remAdjaDups(int[] ar)
 	{
 		int s=0;
+		
+		
 		
 		for(int i=1;i<ar.length;i++)
 		{
